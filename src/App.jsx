@@ -45,7 +45,7 @@ const App = () => {
       version: ''
    });
 
-   const [ placeholder, setPlaceholder ] = useState({
+   const [ placeholder ] = useState({
       url: '',
       version: ''
    });
