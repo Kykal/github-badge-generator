@@ -1,11 +1,10 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 //Import data
 import technologyData from './dataBase.json';
 
 //Import Material-UI hooks
-import { Button, Grid, FormControl } from '@mui/material';
-import { createTheme,ThemeProvider } from '@mui/material';
+import { Button, Grid, FormControl, createTheme,ThemeProvider } from '@mui/material';
 import { makeStyles } from '@mui/styles';
 
 //CSS
@@ -15,11 +14,17 @@ import './App.css';
 import VersionInput from './Components/VersionInput';
 import LanguageInput from './Components/LanguageInput';
 import URLInput from './Components/URLInput';
+import StyleInput from './Components/StyleInput';
+//import LogoInput from './Components/LogoInput';
 
 //Crate styles
 const useStyle = makeStyles((theme) => ({
    badgeImage: {
       height: '63.5px'
+   },
+   justifyContentCenter:{
+      display: 'flex',
+      justifyContent: 'center'
    }
 }));
 
@@ -45,7 +50,8 @@ const App = () => {
       url: '',
       style: {
          leftColor: '333333',
-         rightColor: '999999'
+         rightColor: '999999',
+         style: 'for-the-badge',
       }
    });
 
@@ -100,7 +106,7 @@ const App = () => {
       }
    };
 
-   const src_img = `https://img.shields.io/badge/${badge.version}-${badge.style.rightColor}?style=for-the-badge&logo=${badge.logo}&label=${badge.label}&labelColor=${badge.style.leftColor}`;
+   const src_img = `https://img.shields.io/badge/${badge.version}-${badge.style.rightColor}?style=${badge.style.style}&logo=${badge.logo}&label=${badge.label}&labelColor=${badge.style.leftColor}`;
    const src_markdown = `[![${badge.language}](${src_img})](${badge.url})`;
 
    return (
@@ -115,6 +121,13 @@ const App = () => {
                   <img src={src_img} alt="badge" />
                </a>
             )}
+         </Grid>
+         <Grid item container spacing={2} alignItems='center' justifyContent='center' > {/*Style*/}
+            <Grid item xs={4}  >
+               <FormControl fullWidth >
+                  <StyleInput value={badge.style.style} onChange={(event) => {setBadge({...badge, style:{...badge.style, style: event}})}} />
+               </FormControl>
+            </Grid>
          </Grid>
          <Grid item container spacing={2} alignItems='center' justifyContent='center' > {/*Language selector & Version*/}
             <Grid item xs={2} > {/*Autocomplete - Language selector*/}

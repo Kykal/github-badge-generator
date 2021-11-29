@@ -19,7 +19,7 @@
   },
   {
     "language": "C++",
-    "label": "Cpp",
+    "label": "C%2B%2B",
     "logo": "cplusplus",
     "version": "C++20",
     "url": "https://www.cplusplus.com/",
@@ -63,8 +63,8 @@
     "rightColor": "F0DB4F"
   },
   {
-    "language": "MongoDB",
-    "label": "MongoDB",
+    "language": "Mongo",
+    "label": "Mongo",
     "logo": "mongodb",
     "version": "4.0.8",
     "url": "https://www.mongodb.com/",

@@ -14,7 +14,7 @@ const LanguageInput = (props) => {
       'Flutter',
       'Fortran',
       'JavaScript',
-      'MongoDB',
+      'Mongo',
       'Node',
       'Perl',
       'Python',

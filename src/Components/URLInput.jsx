@@ -14,24 +14,6 @@ const URLInput = (props) => {
       placeholder: props.placeholder
    });
 
-   /*
-   useEffect(() => {
-      if( props.disabled ){
-         setTextField({
-            ...textField,
-            value: '',
-            placeholder: props.placeholder
-         });
-      }else{
-         setTextField({
-            ...textField,
-            placeholder: props.placeholder
-         });
-      }
-      // eslint-disable-next-line
-   }, [props]);
-   */
-
    useEffect(() => {
       setTextField({
          ...textField,
