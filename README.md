@@ -7,9 +7,9 @@ You can can create your badge [clicking here](https://kykal.github.io/github-bad
 ## Technologies supported
 - [x] MongoDB
 - [x] Python
-- [] JavaScript
-- [] TypeScript
-- [] Perl
-- [] C
-- [] C++
-- [] Fortran
+- [ ] JavaScript
+- [ ] TypeScript
+- [ ] Perl
+- [ ] C
+- [ ] C++
+- [ ] Fortran
