@@ -10,7 +10,10 @@ You can can create your badge [clicking here](https://kykal.github.io/github-bad
 
 ## What does this offer?
 This badge can show which tecnology did you use, which version **and the most aesthethic thing is that it** has its identifying color palette in it, in example:
+
 [![Python](https://img.shields.io/badge/3.10.0-1F425F?style=for-the-badge&logo=Python&label=Python&labelColor=FFD43B)](https://www.python.org/)
+[![MongoDB](https://img.shields.io/badge/4.0.8-3FA037?style=for-the-badge&logo=MongoDB&label=MongoDB&labelColor=3F3E42)](https://www.mongodb.com/)
+
 
 ## Technologies supported
 - [x] MongoDB
