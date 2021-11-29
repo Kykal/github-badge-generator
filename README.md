@@ -19,17 +19,4 @@ This badge can show which tecnology did you use, which version **and the most ae
 
 
 ## Technologies supported
-- [x] Angular
-- [x] C
-- [x] C++
-- [x] Dart
-- [x] Flutter
-- [x] Fortran
-- [x] JavaScript
-- [x] Mongo
-- [x] Node
-- [x] Perl
-- [x] Python
-- [x] React
-- [x] TypeScript
-- [x] Vue
+You can watch all technologies supported [here](https://github.com/Kykal/github-badge-generator/projects/2).
