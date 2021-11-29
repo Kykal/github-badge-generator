@@ -8,10 +8,13 @@ A web app where you can easly create your technology badges/shield for your repo
 ## How/Where can I make my badge?
 You can can create your badge [clicking here](https://kykal.github.io/github-badge-generator/).
 
+## What does this offer?
+This badge can show which tecnology did you use, which version **and the most aesthethic thing is that it** has its identifying color palette in it, in example:
+[![Python](https://img.shields.io/badge/3.10.0-1F425F?style=for-the-badge&logo=Python&label=Python&labelColor=FFD43B)](https://www.python.org/)
+
 ## Technologies supported
 - [x] MongoDB
 - [x] Python
-
 - [ ] Angular
 - [ ] C
 - [ ] C++
