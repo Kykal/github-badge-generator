@@ -12,20 +12,13 @@ const VersionInput = (props) => {
    });
 
    useEffect(() => {
-      if(props.disabled){
-         setTextField({
-            ...textField,
-            value: '',
-            placeholder: props.placeholder
-         });
-      }else{
-         setTextField({
-            ...textField,
-            placeholder: props.placeholder
-         });
-      }
+      setTextField({
+         ...textField,
+         value: '',
+         placeholder: props.placeholder
+      });
       // eslint-disable-next-line
-   }, [props] );
+   }, [props.disabled || props.language] );
 
    const inputHandler = (event) => {
       const value = event.target.value; //Save our event target value into a constant to use several times

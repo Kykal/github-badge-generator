@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 
+//Import data
+import technologyData from './dataBase.json';
+
 //Import Material-UI hooks
 import { Button, Grid, FormControl } from '@mui/material';
 import { createTheme,ThemeProvider } from '@mui/material';
@@ -36,6 +39,8 @@ const App = () => {
 
    const [ badge, setBadge ] = useState({
       language: 'Technology',
+      label: 'Technology',
+      logo: '',
       version: 'Version',
       url: '',
       style: {
@@ -43,11 +48,6 @@ const App = () => {
          rightColor: '999999'
       }
    });
-
-   const technologyData = [
-      {language: 'Python', version: '3.10.0', url: 'https://www.python.org/', leftColor: 'FFD43B', rightColor: '1F425F'},
-      {language: 'MongoDB', version: '4.0.8', url: 'https://www.mongodb.com/', leftColor: '3F3E42', rightColor: '3FA037'}
-   ];
 
    const [ placeholders, setPlaceholders ] = useState({
       version: '',
@@ -61,8 +61,11 @@ const App = () => {
          setInputsDisabled(true);
          setBadge({
             ...badge,
-            language: 'technology',
+            language: 'Technology',
+            label: 'Technology',
+            logo: '',
             version: 'version',
+            url: '',
             style: {
                ...badge.style,
                leftColor: '333333',
@@ -81,6 +84,8 @@ const App = () => {
                setBadge({
                   ...badge,
                   language: technologyData[index].language,
+                  label: technologyData[index].label,
+                  logo: technologyData[index].logo,
                   version: technologyData[index].version,
                   style:{
                      ...badge.style,
@@ -95,7 +100,7 @@ const App = () => {
       }
    };
 
-   const src_img = `https://img.shields.io/badge/${badge.version}-${badge.style.rightColor}?style=for-the-badge&logo=${badge.language}&label=${badge.language}&labelColor=${badge.style.leftColor}`;
+   const src_img = `https://img.shields.io/badge/${badge.version}-${badge.style.rightColor}?style=for-the-badge&logo=${badge.logo}&label=${badge.label}&labelColor=${badge.style.leftColor}`;
    const src_markdown = `[![${badge.language}](${src_img})](${badge.url})`;
 
    return (
@@ -106,7 +111,7 @@ const App = () => {
                   <img src={src_img} alt="badge" />
                </div>
             ):(
-               <a href={badge.url}>
+               <a href={badge.url} target='_blank' rel='noopener noreferrer' >
                   <img src={src_img} alt="badge" />
                </a>
             )}
@@ -119,14 +124,14 @@ const App = () => {
             </Grid>
             <Grid item xs={2} > {/*TextField - Version*/}
                <FormControl fullWidth >
-                  <VersionInput disabled={inputsDisabled} placeholder={placeholders.version} onChange={(value) => {setBadge({...badge, version: value})}} />
+                  <VersionInput disabled={inputsDisabled} language={badge.language} placeholder={placeholders.version} onChange={(value) => {setBadge({...badge, version: value})}} />
                </FormControl>
             </Grid>
          </Grid>
          <Grid item container spacing={2} alignItems='center' justifyContent='center' > {/*URL*/}
             <Grid item xs={4} >{/*TextField - URL */}
                <FormControl fullWidth >
-                  <URLInput disabled={inputsDisabled} placeholder={placeholders.url} onChange={(value) => {setBadge({...badge, url: value})}} />
+                  <URLInput disabled={inputsDisabled} language={badge.language} placeholder={placeholders.url} onChange={(value) => {setBadge({...badge, url: value})}} />
                </FormControl>
             </Grid>
          </Grid>

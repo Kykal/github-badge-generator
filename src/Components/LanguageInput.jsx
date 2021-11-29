@@ -7,9 +7,21 @@ import { Autocomplete, TextField } from '@mui/material';
 const LanguageInput = (props) => {
 
    const options = [
+      'Angular',
+      'C',
+      'C++',
+      'Dart',
+      'Flutter',
+      'Fortran',
+      'JavaScript',
+      'MongoDB',
+      'Node',
+      'Perl',
       'Python',
-      'MongoDB'
-   ]
+      'React',
+      'TypeScript',
+      'Vue'
+   ];
 
    const [visualValue, setVisualValue] = useState(''); //inputValue - Visual only
    const [value, setValue] = useState(null); //Value - real value
