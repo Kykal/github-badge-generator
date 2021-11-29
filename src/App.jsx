@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 
 //Import Material-UI hooks
-import { Button, Grid, TextField, FormControl, Typography } from '@mui/material';
+import { Button, Grid, FormControl } from '@mui/material';
 import { createTheme,ThemeProvider } from '@mui/material';
 import { makeStyles } from '@mui/styles';
 
@@ -133,7 +133,7 @@ const App = () => {
          <Grid item container spacing={2} alignItems='center' justifyContent='center' > {/*Buttons*/}
             <Grid item xs={2} sx={{ display:'flex', justifyContent:'right'}} > {/*Copy image*/}
                <ThemeProvider theme={theme} >
-                  <Button size='small' disabled={inputsDisabled} variant='outlined' color='button' onClick={() => {navigator.clipboard.writeText(src_img)}} >Copy image</Button>
+                  <Button size='small' disabled={inputsDisabled} variant='outlined' color='button' onClick={() => {navigator.clipboard.writeText(src_img)}} >Copy image URL</Button>
                </ThemeProvider>
             </Grid>
             <Grid item xs={2} sx={{ display:'flex', justifyContent:'left'}} > {/*Copy markdown*/}

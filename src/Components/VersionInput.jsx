@@ -24,6 +24,7 @@ const VersionInput = (props) => {
             placeholder: props.placeholder
          });
       }
+      // eslint-disable-next-line
    }, [props] );
 
    const inputHandler = (event) => {
