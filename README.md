@@ -17,14 +17,17 @@ This badge can show which tecnology did you use, which version **and the most ae
 
 
 ## Technologies supported
-- [x] MongoDB
-- [x] Python
 - [x] Angular
 - [x] C
 - [x] C++
+- [x] Dart
+- [x] Flutter
 - [x] Fortran
 - [x] JavaScript
+- [x] Mongo
+- [x] Node
 - [x] Perl
+- [x] Python
 - [x] React
 - [x] TypeScript
 - [x] Vue
