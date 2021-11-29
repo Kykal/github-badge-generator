@@ -5,11 +5,11 @@ A web app where you can easly create your technology badges/shield for your repo
 You can can create your badge [clicking here](https://kykal.github.io/github-badge-generator/).
 
 ## Technologies supported
-[x] Python
-[] MongoDB
-[] JavaScript
-[] TypeScript
-[] Perl
-[] C
-[] C++
-[] Fortran
+- [x] MongoDB
+- [x] Python
+- [] JavaScript
+- [] TypeScript
+- [] Perl
+- [] C
+- [] C++
+- [] Fortran
