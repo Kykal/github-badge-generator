@@ -19,12 +19,12 @@ This badge can show which tecnology did you use, which version **and the most ae
 ## Technologies supported
 - [x] MongoDB
 - [x] Python
-- [ ] Angular
-- [ ] C
-- [ ] C++
-- [ ] Fortran
-- [ ] JavaScript
-- [ ] Perl
-- [ ] React
-- [ ] TypeScript
-- [ ] Vue
+- [x] Angular
+- [x] C
+- [x] C++
+- [x] Fortran
+- [x] JavaScript
+- [x] Perl
+- [x] React
+- [x] TypeScript
+- [x] Vue
