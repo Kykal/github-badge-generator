@@ -1,1 +1,0 @@
-{"version":3,"sources":["webpack://src/App.css","webpack://src/index.css"],"names":[],"mappings":"AAAA,mBACG,eACH,CCFA,KACG,QAAS,CACT,wBACH","file":"main.c620b565.chunk.css","sourcesContent":[".MuiGrid-container {\r\n   padding-top: 20%;\r\n}","body {\r\n   margin: 0;\r\n   background-color: #E2EAF1;\r\n}"]}
