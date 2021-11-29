@@ -16,7 +16,7 @@ const languagesList = [
    'React'
 ];
 
-const placeholders = [
+const languagesData = [
    { language: 'Python', version: '3.8.5', url: 'https://www.python.org/', leftColor: 'ffd43b', rightColor: '1f425f' },
    { language: 'MongoDB', version: '4.0.8', url: 'https://www.mongodb.com/', leftColor: '3fa037', rightColor: '3f3e42' },
    { language: 'Node.js', version: '16.11.1', url: 'https://nodejs.org/', leftColor: '3c873a', rightColor: '303030' },
@@ -45,13 +45,20 @@ const App = () => {
       version: ''
    });
 
+   const [ placeholder, setPlaceholder ] = useState({
+      url: '',
+      version: ''
+   });
+
    const [ tempValue, setTempValue ] = useState('');
 
    const badgeHandler = (event, newValue) => {
       for( let index=0; index<languagesList.length; index++ ){
-         if(newValue === placeholders[index].language){
-            badge.leftColor = placeholders[index].leftColor;
-            badge.rightColor = placeholders[index].rightColor;
+         if(newValue === languagesData[index].language){
+            badge.leftColor = languagesData[index].leftColor;
+            badge.rightColor = languagesData[index].rightColor;
+            placeholder.url = languagesData[index].url;
+            placeholder.version = languagesData[index].version;
             break
          }
       };
@@ -104,12 +111,13 @@ const App = () => {
                      />
                   </FormControl>
                </Grid>
-               <Grid item xs={2} >
+               <Grid item xs={2} > {/*Version*/}
                   <FormControl fullWidth >
                      <TextField
                         required
                         variant='standard'
                         label='Version'
+                        placeholder={placeholder.version}
                         value={badge.version}
                         onChange={({target:{value}}) => {
                            setBadge({...badge, version: value});
@@ -119,12 +127,13 @@ const App = () => {
                </Grid>
                <Grid item xs={4} />
                <Grid item xs={4} />
-               <Grid item xs={4} >
+               <Grid item xs={4} > {/*URL*/}
                   <FormControl fullWidth >
                      <TextField
                         variant='standard'
                         type='text'
                         label='URL'
+                        placeholder={placeholder.url}
                         helperText='Page to be redirected to when clicked'
                      />
                   </FormControl>
