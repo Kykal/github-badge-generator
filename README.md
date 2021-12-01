@@ -6,7 +6,6 @@ A web app where you can easly create your technology badges/shield for your repo
 ## Content
 1. [How/Where can I make by badge?](#howwhere-can-i-make-my-badge)
 2. [What does this offer?](#what-does-this-offer)
-3. [Technologies supported](#technologies-supported)
 - - -
 ## How/Where can I make my badge?
 You can can create your badge [clicking here](https://kykal.github.io/github-badge-generator/).
@@ -17,7 +16,3 @@ This badge can show which tecnology did you use, which version **and the most ae
 [![Angular](https://img.shields.io/badge/12.2.8-303030?style=for-the-badge&logo=Angular&label=Angular&labelColor=B52E31)](https://angular.io/)
 [![MongoDB](https://img.shields.io/badge/4.0.8-3FA037?style=for-the-badge&logo=MongoDB&label=MongoDB&labelColor=3F3E42)](https://www.mongodb.com/)
 [![Python](https://img.shields.io/badge/3.10.0-1F425F?style=for-the-badge&logo=Python&label=Python&labelColor=FFD43B)](https://www.python.org/)
-
-
-## Technologies supported
-You can watch all technologies supported [here](https://github.com/Kykal/github-badge-generator/projects/2).
