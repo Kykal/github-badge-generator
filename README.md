@@ -1,7 +1,9 @@
 [![React](https://img.shields.io/badge/react-20232A?style=for-the-badge&logo=react)](https://reactjs.org/)
 
 By [visiting the project web app](https://kykal.github.io/github-badge-generator/) you can generate badges of frameworks, libraries, technologies, etc. for your websites, repositories ``.md`` files, etc. 
+
 Developed using [React](https://reactjs.org/) library.
+
 You can [track down the workflow](https://trello.com/b/LTzuAcKK/github-badge-generator)
 
 
