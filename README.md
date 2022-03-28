@@ -2,6 +2,8 @@
 
 By [visiting the project web app](https://kykal.github.io/github-badge-generator/) you can generate badges of frameworks, libraries, technologies, etc. for your websites, repositories ``.md`` files, etc. 
 Developed using [React](https://reactjs.org/) library.
+You can [track down the workflow](https://trello.com/b/LTzuAcKK/github-badge-generator)
+
 
 ## What can this web app offer?
 Badges using the color palette of the technology you inputted. Examples:
