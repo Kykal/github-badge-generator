@@ -1,3 +1,7 @@
+# 1.1.1
+### Badge color correction:
+- TypeScript - Version background color concur to logo color
+
 # 1.1.0
 ### Technologies added:
 1. Pandas
