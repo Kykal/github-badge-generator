@@ -29,7 +29,7 @@ const App = () => {
 		style: "for-the-badge",
 		logo: "",
 		labelColor: "",
-		version: "",
+		version: ""
 	});
 
 	const BadgeHandler = (event) => {
@@ -53,10 +53,8 @@ const App = () => {
 	return (
 		<main>
 			<Container maxWidth="sm" >
-				<Grid container spacing={2} >
-					<Grid item xs={12} textAlign="center" > {/*Badge*/}
-						<Badge badge={badge} />
-					</Grid>
+				<Grid container spacing={2} display="flex" alignContent="center" height="100vh" >
+					<Badge badge={badge} /> {/*Badge*/}
 
 					<Grid item xs={12} md={6}> {/*Label*/}
 						<FormControl fullWidth >
@@ -86,7 +84,7 @@ const App = () => {
 						</FormControl>
 					</Grid>
 
-					<Grid item xs={12} md={4} > {/*Style*/}
+					<Grid item xs={12} md={6} > {/*Style*/}
 						<FormControl fullWidth variant="standard" >
 							<InputLabel >Style</InputLabel>
 							<Select
@@ -105,7 +103,7 @@ const App = () => {
 						</FormControl>
 					</Grid>
 
-					<Grid item xs={12} md={8} textAlign="center" > {/*Options*/}
+					<Grid item xs={12} md={6} textAlign="center" > {/*Options*/}
 						<FormLabel component="legend" >Options</FormLabel>
 						<FormControl>
 							<FormGroup row >
