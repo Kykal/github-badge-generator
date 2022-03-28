@@ -4,14 +4,6 @@ object-assign
 @license MIT
 */
 
-/**
- * A better abstraction over CSS.
- *
- * @copyright Oleg Isonen (Slobodskoi) / Isonen 2014-present
- * @website https://github.com/cssinjs/jss
- * @license MIT
- */
-
 /** @license MUI v5.2.0
  *
  * This source code is licensed under the MIT license found in the
