@@ -40,7 +40,8 @@
 	{
 		"tags": [
 			"py",
-			"python"
+			"python",
+			"matplotlib"
 		],
 		"label": "python",
 		"hasVersion": {
@@ -48,6 +49,75 @@
 			"version": "306998"
 		},
 		"hasNoVersion": "FFD43B"
+	},
+	{
+		"tags": [
+			"pandas"
+		],
+		"label": "pandas",
+		"hasVersion": {
+			"label": "0B0153",
+			"version": "FFFFFF"
+		},
+		"hasNoVersion": "0B0153"
+	},
+	{
+		"tags": [
+			"numpy"
+		],
+		"label": "numpy",
+		"hasVersion": {
+			"label": "4C78D0",
+			"version": "4CADD0"
+		},
+		"hasNoVersion": "4C78D0"
+	},
+	{
+		"tags": [
+			"keras"
+		],
+		"label": "keras",
+		"hasVersion": {
+			"label": "D00000",
+			"version": "2F2F2F"
+		},
+		"hasNoVersion": "D00000"
+	},
+	{
+		"tags": [
+			"scikit",
+			"scikitlearn",
+			"scikit-learn"
+		],
+		"label": "scikitlearn",
+		"hasVersion": {
+			"label": "319ACE",
+			"version": "F89A36"
+		},
+		"hasNoVersion": "319ACE"
+	},
+	{
+		"tags": [
+			"tensorflow",
+			"tf"
+		],
+		"label": "tensorflow",
+		"hasVersion": {
+			"label": "A6A9AC",
+			"version": "EE8E22"
+		},
+		"hasNoVersion": "A6A9AC"
+	},
+	{
+		"tags": [
+			"jupyter"
+		],
+		"label": "jupyter",
+		"hasVersion": {
+			"label": "4D4D4D",
+			"version": "F37821"
+		},
+		"hasNoVersion": "4D4D4D"
 	},
 	{
 		"tags": [
@@ -139,6 +209,224 @@
 		"hasVersion": {
 			"label": "000000",
 			"version": "FFDA1C"
+		},
+		"hasNoVersion": "000000"
+	},
+	{
+		"tags": [
+			"yt",
+			"youtube"
+		],
+		"label": "youtube",
+		"hasVersion": {
+			"label": "FF0000",
+			"version": "FFFFFF"
+		},
+		"hasNoVersion": "FF0000"
+	},
+	{
+		"tags": [
+			"fb",
+			"face",
+			"facebook"
+		],
+		"label": "facebook",
+		"hasVersion": {
+			"label": "DFE3EE",
+			"version": "3B5998"
+		},
+		"hasNoVersion": "3B5998"
+	},
+	{
+		"tags": [
+			"gh",
+			"github"
+		],
+		"label": "github",
+		"hasVersion": {
+			"label": "211F1F",
+			"version": "666666"
+		},
+		"hasNoVersion": "211F1F"
+	},
+	{
+		"tags": [
+			"vimeo"
+		],
+		"label": "vimeo",
+		"hasVersion": {
+			"label": "FFFFFF",
+			"version": "19B7EA"
+		},
+		"hasNoVersion": "FFFFFF"
+	},
+	{
+		"tags": [
+			"julia"
+		],
+		"label": "julia",
+		"hasVersion": {
+			"label": "FFFFFF",
+			"version": "9558B2"
+		},
+		"hasNoVersion": "FFFFFF"
+	},
+	{
+		"tags": [
+			"dart"
+		],
+		"label": "dart",
+		"hasVersion": {
+			"label": "2CB7F6",
+			"version": "01579B"
+		},
+		"hasNoVersion": "2CB7F6"
+	},
+	{
+		"tags": [
+			"flutter"
+		],
+		"label": "flutter",
+		"hasVersion": {
+			"label": "00579B",
+			"version": "54C5F7"
+		},
+		"hasNoVersion": "00579B"
+	},
+	{
+		"tags": [
+			"mysql"
+		],
+		"label": "mysql",
+		"hasVersion": {
+			"label": "E38E24",
+			"version": "007195"
+		},
+		"hasNoVersion": "E38E24"
+	},
+	{
+		"tags": [
+			"postgresql"
+		],
+		"label": "postgresql",
+		"hasVersion": {
+			"label": "FFFFFF",
+			"version": "336791"
+		},
+		"hasNoVersion": "FFFFFF"
+	},
+	{
+		"tags": [
+			"firebase"
+		],
+		"label": "firebase",
+		"hasVersion": {
+			"label": "F58410",
+			"version": "FFCC32"
+		},
+		"hasNoVersion": "F58410"
+	},
+	{
+		"tags": [
+			"sass",
+			"scss"
+		],
+		"label": "sass",
+		"hasVersion": {
+			"label": "FFFFFF",
+			"version": "D56EA3"
+		},
+		"hasNoVersion": "FFFFFF"
+	},
+	{
+		"tags": [
+			"ts",
+			"typescript"
+		],
+		"label": "typescript",
+		"hasVersion": {
+			"label": "FFFFFF",
+			"version": "F7E018"
+		},
+		"hasNoVersion": "FFFFFF"
+	},
+	{
+		"tags": [
+			"js",
+			"javascript"
+		],
+		"label": "javascript",
+		"hasVersion": {
+			"label": "4D4D4D",
+			"version": "F7E018"
+		},
+		"hasNoVersion": "4D4D4D"
+	},
+	{
+		"tags": [
+			"java"
+		],
+		"label": "java",
+		"hasVersion": {
+			"label": "EC2025",
+			"version": "FFFFFF"
+		},
+		"hasNoVersion": "EC2025"
+	},
+	{
+		"tags": [
+			"latex"
+		],
+		"label": "latex",
+		"hasVersion": {
+			"label": "008181",
+			"version": "FFFFFF"
+		},
+		"hasNoVersion": "008181"
+	},
+	{
+		"tags": [
+			"linux"
+		],
+		"label": "linux",
+		"hasVersion": {
+			"label": "000000",
+			"version": "FFCC00"
+		},
+		"hasNoVersion": "000000"
+	},
+	{
+		"tags": [
+			"ubuntu"
+		],
+		"label": "ubuntu",
+		"hasVersion": {
+			"label": "000000",
+			"version": "FF6209"
+		},
+		"hasNoVersion": "000000"
+	},
+	{
+		"tags": [
+			"debian"
+		],
+		"label": "debian",
+		"hasVersion": {
+			"label": "D70751",
+			"version": "FFFFFF"
+		},
+		"hasNoVersion": "D70751"
+	},
+	{
+		"tags": [
+			"next",
+			"nextjs",
+			"next.js"
+		],
+		"label": "next.js",
+		"hasVersion": {
+			"label": "000000",
+			"version": "FFFFFF"
 		},
 		"hasNoVersion": "000000"
 	}

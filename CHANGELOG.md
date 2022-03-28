@@ -1,0 +1,23 @@
+# 1.1.0
+### Technologies added:
+1. Pandas
+1. Numpy
+1. Keras
+1. Scikit-learn
+1. Tensorflow
+1. Jupyter
+1. MySQL
+1. PostgreeSQL
+1. Firebase
+1. Flutter
+1. Dart
+1. Julia
+1. Sass
+1. TypeScript
+1. JavaScript
+1. Java
+1. LaTeX
+1. Linux
+1. Ubuntu
+1. Debian
+1. Next.JS

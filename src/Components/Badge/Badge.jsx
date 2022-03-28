@@ -52,7 +52,31 @@ const Badge = ({badge}) => {
 	let url;
 
 	//If there's no results...
-	if( tech === null ){
+	if( tech === null && badge.hasLogo ){
+		const label = badge.label.length === 0 ? "Technology" : SpecialChars(badge.label);
+		url = `https://img.shields.io/badge/${version}-999999?style=${badge.style}&logo=${label}&label=${label}&labelColor=333333`;
+		
+		return (
+			<>
+				<Grid item xs={12} textAlign="center" minHeight="4em" maxHeight="4em" >
+					<img alt="Badge with version" src={url} />
+				</Grid>
+				<Grid item xs={12} textAlign="center" >
+					<Button
+						size="small"
+						variant="outlined"
+						onClick={() => {
+							navigator.clipboard.writeText(url);
+						}}
+					>
+						Copy URL
+					</Button>
+				</Grid>
+			</>
+		);
+	};
+
+	if( tech === null && !badge.hasLogo ){
 		const label = badge.label.length === 0 ? "Technology" : SpecialChars(badge.label);
 		url = `https://img.shields.io/badge/${version}-999999?style=${badge.style}&label=${label}&labelColor=333333`;
 		
