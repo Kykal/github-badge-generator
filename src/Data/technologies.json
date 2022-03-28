@@ -1,0 +1,145 @@
+[
+	{
+		"tags": [
+			"node",
+			"nodejs",
+			"node.js"
+		],
+		"label": "node.js",
+		"hasVersion": {
+			"label": "303030",
+			"version": "3C873A"
+		},
+		"hasNoVersion": "303030"
+	},
+	{
+		"tags": [
+			"react",
+			"reactjs",
+			"react.js"
+		],
+		"label": "react",
+		"hasVersion": {
+			"label": "20232A",
+			"version": "61DAFB"
+		},
+		"hasNoVersion": "20232A"
+	},
+	{
+		"tags": [
+			"mongo",
+			"mongodb"
+		],
+		"label": "mongodb",
+		"hasVersion": {
+			"label": "3F3E42",
+			"version": "3FA037"
+		},
+		"hasNoVersion": "3F3E42"
+	},
+	{
+		"tags": [
+			"py",
+			"python"
+		],
+		"label": "python",
+		"hasVersion": {
+			"label": "FFD43B",
+			"version": "306998"
+		},
+		"hasNoVersion": "FFD43B"
+	},
+	{
+		"tags": [
+			"angular",
+			"angularjs",
+			"angular.js"
+		],
+		"label": "angular",
+		"hasVersion": {
+			"label": "B52E31",
+			"version": "000000"
+		},
+		"hasNoVersion": "B52E31"
+	},
+	{
+		"tags": [
+			"fortran"
+		],
+		"label": "fortran",
+		"hasVersion": {
+			"label": "744E97",
+			"version": "FFFFFF"
+		},
+		"hasNoVersion": "744E97"
+	},
+	{
+		"tags": [
+			"c++",
+			"cpp"
+		],
+		"label": "c%2b%2b",
+		"hasVersion": {
+			"label": "004283",
+			"version": "659BD3"
+		},
+		"hasNoVersion": "004283"
+	},
+	{
+		"tags": [
+			"c"
+		],
+		"label": "c",
+		"hasVersion": {
+			"label": "FFFFFF",
+			"version": "A8B9CC"
+		},
+		"hasNoVersion": "FFFFFF"
+	},
+	{
+		"tags": [
+			"cs",
+			"csharp",
+			"c#"
+		],
+		"label": "csharp",
+		"hasVersion": {
+			"label": "68217A",
+			"version": "953DAC"
+		},
+		"hasNoVersion": "68217A"
+	},
+	{
+		"tags": [
+			"rust"
+		],
+		"label": "rust",
+		"hasVersion": {
+			"label": "000000",
+			"version": "F74C00"
+		},
+		"hasNoVersion": "000000"
+	},
+	{
+		"tags": [
+			"r"
+		],
+		"label": "r",
+		"hasVersion": {
+			"label": "276DC2",
+			"version": "BFC1C4"
+		},
+		"hasNoVersion": "276DC2"
+	},
+	{
+		"tags": [
+			"labview"
+		],
+		"label": "labview",
+		"hasVersion": {
+			"label": "000000",
+			"version": "FFDA1C"
+		},
+		"hasNoVersion": "000000"
+	}
+]

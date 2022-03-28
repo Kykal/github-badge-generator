@@ -1,149 +1,138 @@
 import React, { useState } from 'react';
 
-//Import Material-UI hooks
-import { Button, Grid, FormControl } from '@mui/material';
-import { createTheme,ThemeProvider } from '@mui/material';
-import { makeStyles } from '@mui/styles';
+//Material design
+import Container from '@mui/material/Container';
+import Grid from '@mui/material/Grid';
+import TextField from '@mui/material/TextField';
+import InputLabel from '@mui/material/InputLabel';
+import FormControlLabel from '@mui/material/FormControlLabel';
+import FormControl from '@mui/material/FormControl';
+import FormLabel from '@mui/material/FormLabel';
+import CheckBox from '@mui/material/Checkbox';
+import Select from '@mui/material/Select';
+import MenuItem from '@mui/material/MenuItem';
+import FormGroup from '@mui/material/FormGroup';
 
-//CSS
-import './App.css';
 
-//Import custom components
-import VersionInput from './Components/VersionInput';
-import LanguageInput from './Components/LanguageInput';
-import URLInput from './Components/URLInput';
+//Custom components
+import Badge from './Components/Badge';
 
-//Crate styles
-const useStyle = makeStyles((theme) => ({
-   badgeImage: {
-      height: '63.5px'
-   }
-}));
-
-const theme = createTheme({
-   palette:{
-      button:{
-         main: '#333333',
-         contrastText: '#fff'
-      }
-   }
-});
 
 //Component content
 const App = () => {
 
-   const classes = useStyle(); //Declare styles
+	//Badge information
+	const [ badge, setBadge ] = useState({
+		label: "",
+		hasVersion: true,
+		hasLogo: true,
+		style: "for-the-badge",
+		logo: "",
+		labelColor: "",
+		version: ""
+	});
 
-   const [ badge, setBadge ] = useState({
-      language: 'Technology',
-      version: 'Version',
-      url: '',
-      style: {
-         leftColor: '333333',
-         rightColor: '999999'
-      }
-   });
+	const BadgeHandler = (event) => {
+		const value = event.target.value.trim();
+		const name = event.target.name;
+		setBadge({
+			...badge,
+			[name]: value
+		});
+	};
 
-   const technologyData = [
-      {language: 'Python', version: '3.10.0', url: 'https://www.python.org/', leftColor: 'FFD43B', rightColor: '1F425F'},
-      {language: 'MongoDB', version: '4.0.8', url: 'https://www.mongodb.com/', leftColor: '3F3E42', rightColor: '3FA037'}
-   ];
+	const BadgeOptionsHandler = (event) => {
+		const value = event.target.checked;
+		const name = event.target.name;
+		setBadge({
+			...badge,
+			[name]: value
+		});
+	};
 
-   const [ placeholders, setPlaceholders ] = useState({
-      version: '',
-      url: ''
-   });
+	return (
+		<main>
+			<Container maxWidth="sm" >
+				<Grid container spacing={2} display="flex" alignContent="center" height="100vh" >
+					<Badge badge={badge} /> {/*Badge*/}
 
-   const [inputsDisabled, setInputsDisabled] = useState(true);
+					<Grid item xs={12} md={6}> {/*Label*/}
+						<FormControl fullWidth >
+							<TextField
+								name="label"
+								value={badge.label}
+								onChange={BadgeHandler}
 
-   const languageHandler = (languageValue) => {
-      if( languageValue === null ){
-         setInputsDisabled(true);
-         setBadge({
-            ...badge,
-            language: 'technology',
-            version: 'version',
-            style: {
-               ...badge.style,
-               leftColor: '333333',
-               rightColor: '999999'
-            }
-         });
-      }else{
-         setInputsDisabled(false);
-         for(let index=0; index<technologyData.length; index++){
-            if( languageValue === technologyData[index].language ){
-               setPlaceholders({
-                  ...placeholders,
-                  version: technologyData[index].version,
-                  url: technologyData[index].url,
-               });
-               setBadge({
-                  ...badge,
-                  language: technologyData[index].language,
-                  version: technologyData[index].version,
-                  style:{
-                     ...badge.style,
-                     leftColor: technologyData[index].leftColor,
-                     rightColor: technologyData[index].rightColor
-                  }
-               });
-               break;
-            }
-         }
+								label="Technology"
+								helperText="Framework, library, etc."
+								variant="standard"
+							/>
+						</FormControl>
+					</Grid>
 
-      }
-   };
+					<Grid item xs={12} md={6}> {/*Version*/}
+						<FormControl fullWidth>
+							<TextField
+								name="version"
+								value={badge.version}
+								onChange={BadgeHandler}
 
-   const src_img = `https://img.shields.io/badge/${badge.version}-${badge.style.rightColor}?style=for-the-badge&logo=${badge.language}&label=${badge.language}&labelColor=${badge.style.leftColor}`;
-   const src_markdown = `[![${badge.language}](${src_img})](${badge.url})`;
+								label="Version"
+								helperText=" "
+								variant="standard"
+							/>
+						</FormControl>
+					</Grid>
 
-   return (
-      <Grid container spacing={2} > {/*Main container*/}
-         <Grid item container spacing={2} alignItems='center' justifyContent='center' className={classes.badgeImage} > {/*Badge*/}
-            {badge.url.length===0 ? (
-               <div>
-                  <img src={src_img} alt="badge" />
-               </div>
-            ):(
-               <a href={badge.url}>
-                  <img src={src_img} alt="badge" />
-               </a>
-            )}
-         </Grid>
-         <Grid item container spacing={2} alignItems='center' justifyContent='center' > {/*Language selector & Version*/}
-            <Grid item xs={2} > {/*Autocomplete - Language selector*/}
-               <FormControl fullWidth >
-                  <LanguageInput onChange={languageHandler} />
-               </FormControl>
-            </Grid>
-            <Grid item xs={2} > {/*TextField - Version*/}
-               <FormControl fullWidth >
-                  <VersionInput disabled={inputsDisabled} placeholder={placeholders.version} onChange={(value) => {setBadge({...badge, version: value})}} />
-               </FormControl>
-            </Grid>
-         </Grid>
-         <Grid item container spacing={2} alignItems='center' justifyContent='center' > {/*URL*/}
-            <Grid item xs={4} >{/*TextField - URL */}
-               <FormControl fullWidth >
-                  <URLInput disabled={inputsDisabled} placeholder={placeholders.url} onChange={(value) => {setBadge({...badge, url: value})}} />
-               </FormControl>
-            </Grid>
-         </Grid>
-         <Grid item container spacing={2} alignItems='center' justifyContent='center' > {/*Buttons*/}
-            <Grid item xs={2} sx={{ display:'flex', justifyContent:'right'}} > {/*Copy image*/}
-               <ThemeProvider theme={theme} >
-                  <Button size='small' disabled={inputsDisabled} variant='outlined' color='button' onClick={() => {navigator.clipboard.writeText(src_img)}} >Copy image URL</Button>
-               </ThemeProvider>
-            </Grid>
-            <Grid item xs={2} sx={{ display:'flex', justifyContent:'left'}} > {/*Copy markdown*/}
-               <ThemeProvider theme={theme} >
-                  <Button size='small' disabled={inputsDisabled} variant='outlined' color='button' onClick={() => {navigator.clipboard.writeText(src_markdown)}} >Copy markdown</Button>
-               </ThemeProvider>
-            </Grid>
-         </Grid>
-      </Grid>
-   );
+					<Grid item xs={12} md={6} > {/*Style*/}
+						<FormControl fullWidth variant="standard" >
+							<InputLabel >Style</InputLabel>
+							<Select
+								name="style"
+								value={badge.style}
+								onChange={BadgeHandler}
+							
+								label="Style"
+								variant="standard"
+							>
+								<MenuItem value="for-the-badge" >For the badge</MenuItem>
+								<MenuItem value="flat" >Flat</MenuItem>
+								<MenuItem value="flat-square" >Flat square</MenuItem>
+								<MenuItem value="plastic" >Plastic</MenuItem>
+							</Select>
+						</FormControl>
+					</Grid>
+
+					<Grid item xs={12} md={6} textAlign="center" > {/*Options*/}
+						<FormLabel component="legend" >Options</FormLabel>
+						<FormControl>
+							<FormGroup row >
+								<FormControlLabel
+									label="Logo"
+									control={<CheckBox
+													name="hasLogo"
+
+													checked={badge.hasLogo}
+													onChange={BadgeOptionsHandler}
+												/>}
+								/> 
+								<FormControlLabel
+									label="Version"
+									control={<CheckBox
+													name="hasVersion"
+
+													checked={badge.hasVersion}
+													onChange={BadgeOptionsHandler}
+												/>}
+								/>
+								
+							</FormGroup>
+						</FormControl>
+					</Grid>
+				</Grid>
+			</Container>
+		</main>
+	);
 };
 
 export default App; //Export component
