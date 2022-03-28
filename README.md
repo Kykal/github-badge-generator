@@ -1,4 +1,4 @@
-[![React](https://img.shields.io/badge/17.0.2-60DAFB?style=for-the-badge&logo=react&label=React&labelColor=1F232A)](https://reactjs.org/)
+[![React](https://img.shields.io/badge/react-20232A?style=for-the-badge&logo=react)](https://reactjs.org/)
 
 # Github badge generator
 A web app where you can easly create your technology badges/shield for your repositories, websites, etc.
