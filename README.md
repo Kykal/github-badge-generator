@@ -3,8 +3,8 @@
 By [visiting the project web app](https://kykal.github.io/github-badge-generator/) you can generate badges of frameworks, libraries, technologies, etc. for your websites, repositories ``.md`` files, etc. 
 Developed using [React](https://reactjs.org/) library.
 
-## What can this website offer?
-Badges using the a color palette of the technology you inputted. Examples:
+## What can this web app offer?
+Badges using the color palette of the technology you inputted. Examples:
 |Normal badge|Without logo|Without version|Without logo and version|
 |-|-|-|-|
 |![React](https://img.shields.io/badge/17.0.2-61DAFB?style=for-the-badge&logo=react&label=react&labelColor=20232A)|![React](https://img.shields.io/badge/17.0.2-61DAFB?style=for-the-badge&label=react&labelColor=20232A)|![React](https://img.shields.io/badge/react-20232A?style=for-the-badge&logo=react)|![React](https://img.shields.io/badge/react-20232A?style=for-the-badge)|
