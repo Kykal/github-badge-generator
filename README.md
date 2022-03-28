@@ -1,18 +1,13 @@
 [![React](https://img.shields.io/badge/react-20232A?style=for-the-badge&logo=react)](https://reactjs.org/)
 
-# Github badge generator
-A web app where you can easly create your technology badges/shield for your repositories, websites, etc.
-- - -
-## Content
-1. [How/Where can I make by badge?](#howwhere-can-i-make-my-badge)
-2. [What does this offer?](#what-does-this-offer)
-- - -
-## How/Where can I make my badge?
-You can can create your badge [clicking here](https://kykal.github.io/github-badge-generator/).
+By [visiting the project web app](https://kykal.github.io/github-badge-generator/) you can generate badges of frameworks, libraries, technologies, etc. for your websites, repositories ``.md`` files, etc. 
+Developed using [React](https://reactjs.org/) library.
 
-## What does this offer?
-This badge can show which tecnology did you use, which version **and the most aesthethic thing is that it** has its identifying color palette in it, in example:
-
-[![Angular](https://img.shields.io/badge/12.2.8-303030?style=for-the-badge&logo=Angular&label=Angular&labelColor=B52E31)](https://angular.io/)
-[![MongoDB](https://img.shields.io/badge/4.0.8-3FA037?style=for-the-badge&logo=MongoDB&label=MongoDB&labelColor=3F3E42)](https://www.mongodb.com/)
-[![Python](https://img.shields.io/badge/3.10.0-1F425F?style=for-the-badge&logo=Python&label=Python&labelColor=FFD43B)](https://www.python.org/)
+## What can this website offer?
+Badges using the a color palette of the technology you inputted. Examples:
+|Normal badge|Without logo|Without version|Without logo and version|
+|-|-|-|-|
+|![React](https://img.shields.io/badge/17.0.2-61DAFB?style=for-the-badge&logo=react&label=react&labelColor=20232A)|![React](https://img.shields.io/badge/17.0.2-61DAFB?style=for-the-badge&label=react&labelColor=20232A)|![React](https://img.shields.io/badge/react-20232A?style=for-the-badge&logo=react)|![React](https://img.shields.io/badge/react-20232A?style=for-the-badge)|
+|![Angular](https://img.shields.io/badge/13.1.1-000000?style=for-the-badge&logo=angular&label=Angular&labelColor=B52E31)|![Angular](https://img.shields.io/badge/13.1.1-000000?style=for-the-badge&label=Angular&labelColor=B52E31)|![Angular](https://img.shields.io/badge/Angular-B52E31?style=for-the-badge&logo=angular)|![Angular](https://img.shields.io/badge/Angular-B52E31?style=for-the-badge)|
+|![Python](https://img.shields.io/badge/10.3.4-306998?style=for-the-badge&logo=python&label=Python&labelColor=FFD43B)|![Python](https://img.shields.io/badge/10.3.4-306998?style=for-the-badge&label=Python&labelColor=FFD43B)|![Python](https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python)|![Python](https://img.shields.io/badge/Python-FFD43B?style=for-the-badge)|
+|![MongoDB](https://img.shields.io/badge/5.1-3FA037?style=for-the-badge&logo=mongodb&label=MongoDB&labelColor=3F3E42)|![MongoDB](https://img.shields.io/badge/5.1-3FA037?style=for-the-badge&label=MongoDB&labelColor=3F3E42)|![MongoDB](https://img.shields.io/badge/MongoDB-3F3E42?style=for-the-badge&logo=mongodb)|![C#](https://img.shields.io/badge/MongoDB-3F3E42?style=for-the-badge)|
