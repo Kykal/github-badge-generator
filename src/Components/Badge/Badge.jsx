@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 
 //Import data
@@ -6,8 +6,10 @@ import techs from '../../Data/technologies.json';
 
 
 //Material design
+import Alert from '@mui/material/Alert';
 import Button from '@mui/material/Button';
 import Grid from '@mui/material/Grid';
+import Snackbar from '@mui/material/Snackbar';
 
 
 //Check if input techonolgy is on the list
@@ -47,9 +49,20 @@ const SpecialChars = (label) => {
 
 //Component content
 const Badge = ({badge}) => {
+	const [ snackbarStatus, setSnackbarStatus ] = useState(false);
+
 	const tech = CheckForTech(badge.label.toLowerCase());
 	const version = badge.version.length === 0 ? "Version" : badge.version;
+	const externalURL = badge.externalURL;
 	let url;
+
+	const SnackbarHandler = (event, reason) => {
+		if(reason === 'clickaway'){
+			return;
+		}
+
+		setSnackbarStatus(false);
+	};
 
 	//If there's no results...
 	if( tech === null && badge.hasLogo ){
@@ -61,17 +74,47 @@ const Badge = ({badge}) => {
 				<Grid item xs={12} textAlign="center" minHeight="4em" maxHeight="4em" >
 					<img alt="Badge with version" src={url} />
 				</Grid>
-				<Grid item xs={12} textAlign="center" >
+				<Grid item xs={12} md={6} textAlign="center" >
 					<Button
 						size="small"
 						variant="outlined"
 						onClick={() => {
 							navigator.clipboard.writeText(url);
+							setSnackbarStatus(true);
 						}}
 					>
-						Copy URL
+						Copy badge URL
 					</Button>
 				</Grid>
+				<Grid item xs={12} md={6} textAlign="center" >
+					<Button
+						size="small"
+						variant="outlined"
+						onClick={() => {
+							navigator.clipboard.writeText(`
+								[![${badge.label}](${url})](${externalURL})
+							`);
+							setSnackbarStatus(true);
+						}}
+					>
+						Copy Markdown URL
+					</Button>
+				</Grid>
+				<Snackbar
+					anchorOrigin={{ vertical: 'top', horizontal: 'center' }}
+					
+					open={snackbarStatus}
+					autoHideDuration={1500}
+					onClose={SnackbarHandler}
+				>
+					<Alert
+						onClose={SnackbarHandler}
+						severity="success"
+						sx={{ width: '100%' }}
+					>
+						Badge copied successfully!
+					</Alert>
+				</Snackbar>
 			</>
 		);
 	};
@@ -85,17 +128,47 @@ const Badge = ({badge}) => {
 				<Grid item xs={12} textAlign="center" minHeight="4em" maxHeight="4em" >
 					<img alt="Badge with version" src={url} />
 				</Grid>
-				<Grid item xs={12} textAlign="center" >
+				<Grid item xs={12} md={6} textAlign="center" >
 					<Button
 						size="small"
 						variant="outlined"
 						onClick={() => {
 							navigator.clipboard.writeText(url);
+							setSnackbarStatus(true);
 						}}
 					>
-						Copy URL
+						Copy badge URL
 					</Button>
 				</Grid>
+				<Grid item xs={12} md={6} textAlign="center" >
+					<Button
+						size="small"
+						variant="outlined"
+						onClick={() => {
+							navigator.clipboard.writeText(`
+								[![${badge.label}](${url})](${externalURL})
+							`);
+							setSnackbarStatus(true);
+						}}
+					>
+						Copy Markdown URL
+					</Button>
+				</Grid>
+				<Snackbar
+					anchorOrigin={{ vertical: 'top', horizontal: 'center' }}
+					
+					open={snackbarStatus}
+					autoHideDuration={1500}
+					onClose={SnackbarHandler}
+				>
+					<Alert
+						onClose={SnackbarHandler}
+						severity="success"
+						sx={{ width: '100%' }}
+					>
+						Badge copied successfully!
+					</Alert>
+				</Snackbar>
 			</>
 		);
 	};
@@ -122,18 +195,47 @@ const Badge = ({badge}) => {
 			<Grid item xs={12} textAlign="center" minHeight="4em" maxHeight="4em" >
 				<img alt="Badge with version" src={url} />
 			</Grid>
-			<Grid item xs={12} textAlign="center" >
+			<Grid item xs={12} md={6} textAlign="center" >
 				<Button
 					size="small"
 					variant="outlined"
-					url={url}
 					onClick={() => {
 						navigator.clipboard.writeText(url);
+						setSnackbarStatus(true);
 					}}
 				>
-					Copy URL
+					Copy badge URL
 				</Button>
 			</Grid>
+			<Grid item xs={12} md={6} textAlign="center" >
+				<Button
+					size="small"
+					variant="outlined"
+					onClick={() => {
+						navigator.clipboard.writeText(`
+							[![${badge.label}](${url})](${externalURL})
+						`);
+						setSnackbarStatus(true);
+					}}
+				>
+					Copy Markdown URL
+				</Button>
+			</Grid>
+			<Snackbar
+				anchorOrigin={{ vertical: 'top', horizontal: 'center' }}
+				
+				open={snackbarStatus}
+				autoHideDuration={1500}
+				onClose={SnackbarHandler}
+			>
+				<Alert
+					onClose={SnackbarHandler}
+					severity="success"
+					sx={{ width: '100%' }}
+				>
+					Badge copied successfully!
+				</Alert>
+			</Snackbar>
 		</>
 	);
 };

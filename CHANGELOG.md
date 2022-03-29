@@ -1,6 +1,23 @@
+# 1.2
+## UI:
+- **Snackbar** - Now you will be notified when you copy the badge successfully.
+- **External URL *input*** - Link your badge to an external website.
+- **Copy markdown URL *button*** - Copy badge URL using markdown format with external URL.
+- **Clear *inputs*** - You can now clear input value from technology, version and external URL.
+## Labels added
+### Technologies
+- Go
+- Google
+- Ruby
+- Vue.JS
+
+- - -
+
 # 1.1.1
 ### Badge color correction:
 - TypeScript - Version background color concur to logo color
+
+- - -
 
 # 1.1.0
 ### Technologies added:
