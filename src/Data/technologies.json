@@ -429,5 +429,51 @@
 			"version": "FFFFFF"
 		},
 		"hasNoVersion": "000000"
+	},
+	{
+		"tags": [
+			"google"
+		],
+		"label": "google",
+		"hasVersion": {
+			"label": "FFFFFF",
+			"version": "3484F0"
+		},
+		"hasNoVersion": "FFFFFF"
+	},
+	{
+		"tags": [
+			"ruby"
+		],
+		"label": "ruby",
+		"hasVersion": {
+			"label": "CC0000",
+			"version": "FFFFFF"
+		},
+		"hasNoVersion": "CC0000"
+	},
+	{
+		"tags": [
+			"vue",
+			"vuejs",
+			"vue.js"
+		],
+		"label": "vue.js",
+		"hasVersion": {
+			"label": "35495E",
+			"version": "41B883"
+		},
+		"hasNoVersion": "35495E"
+	},
+	{
+		"tags": [
+			"go"
+		],
+		"label": "go",
+		"hasVersion": {
+			"label": "FFFFFF",
+			"version": "29BEB0"
+		},
+		"hasNoVersion": "FFFFFF"
 	}
 ]
