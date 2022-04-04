@@ -1,5 +1,6 @@
 [![react](https://img.shields.io/badge/17.0.2-61DAFB?style=for-the-badge&logo=react&label=react&labelColor=20232A)](https://reactjs.org/)
 [![mui](https://img.shields.io/badge/5.2.1-0081CB?style=for-the-badge&logo=mui&label=mui&labelColor=FFFFFF)](https://mui.com/)
+[![trello](https://img.shields.io/badge/Trello-007AC0?style=for-the-badge&logo=trello)](https://trello.com/b/LTzuAcKK/github-badge-generator)
 # Badge generator
 Generate the badges you need for your repositories, or anything else!
 
