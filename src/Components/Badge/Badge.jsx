@@ -51,7 +51,7 @@ const SpecialChars = (label) => {
 const Badge = ({badge}) => {
 	const [ snackbarStatus, setSnackbarStatus ] = useState(false);
 
-	const tech = CheckForTech(badge.label.toLowerCase());
+	const tech = CheckForTech(badge.label.toLowerCase().trim());
 	const version = badge.version.length === 0 ? "Version" : badge.version;
 	const externalURL = badge.externalURL;
 	let url;

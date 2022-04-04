@@ -1,7 +1,11 @@
 import React, { useState } from 'react';
 
 
+//Styles
+import './App.css';
+
 //Material design
+import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
 import TextField from '@mui/material/TextField';
@@ -15,6 +19,8 @@ import MenuItem from '@mui/material/MenuItem';
 import FormGroup from '@mui/material/FormGroup';
 import InputAdornment from '@mui/material/InputAdornment';
 import IconButton from '@mui/material/IconButton';
+import Typography from '@mui/material/Typography';
+import Link from '@mui/material/Link';
 
 import ClearIcon from '@mui/icons-material/Clear';
 
@@ -38,7 +44,7 @@ const App = () => {
 	});
 
 	const BadgeHandler = (event) => {
-		const value = event.target.value.trim();
+		const value = event.target.value;
 		const name = event.target.name;
 		setBadge({
 			...badge,
@@ -80,140 +86,151 @@ const App = () => {
 	};
 
 	return (
-		<main>
-			<Container maxWidth="sm" >
-				<Grid container spacing={2} display="flex" alignContent="center" height="100vh" >
-					<Badge badge={badge} /> {/*Badge*/}
+		<>
+			<main>
+				<Container maxWidth="sm" >
+					<Grid container spacing={2} display="flex" alignContent="center" height="100vh" >
+						<Badge badge={badge} /> {/*Badge*/}
 
-					<Grid item xs={12} md={6}> {/*Label*/}
-						<FormControl fullWidth >
-							<TextField
-								name="label"
-								value={badge.label}
-								onChange={BadgeHandler}
+						<Grid item xs={12} md={6}> {/*Label*/}
+							<FormControl fullWidth >
+								<TextField
+									name="label"
+									value={badge.label}
+									onChange={BadgeHandler}
 
-								label="Technology"
-								helperText="Framework, library, etc."
-								variant="standard"
+									label="Technology"
+									helperText="Framework, library, etc."
+									variant="standard"
 
-								InputProps={{
-									endAdornment:
-										<InputAdornment position="end">
-											{
-												badge.label.length === 0 ? null : (
-													<IconButton onClick={ClearBadgeLabelHandler}>
-														<ClearIcon/>
-													</IconButton>
-												)
-											}
-										</InputAdornment>
-								}}
-							/>
-						</FormControl>
-					</Grid>
-
-					<Grid item xs={12} md={6}> {/*Version*/}
-						<FormControl fullWidth>
-							<TextField
-								name="version"
-								value={badge.version}
-								onChange={BadgeHandler}
-
-								label="Version"
-								helperText=" "
-								variant="standard"
-																
-								InputProps={{
-									endAdornment:
-										<InputAdornment position="end">
-											{
-												badge.version.length === 0 ? null : (
-													<IconButton onClick={ClearBadgeVersionHandler}>
-														<ClearIcon/>
-													</IconButton>
-												)
-											}
-										</InputAdornment>
-								}}
-							/>
-						</FormControl>
-					</Grid>
-
-					<Grid item xs={12}> {/*External URL*/}
-						<FormControl fullWidth>
-							<TextField
-								name="externalURL"
-								value={badge.externalURL}
-								onChange={BadgeHandler}
-
-								label="External URL"
-								helperText="When badge is clicked will visit this URL"
-								variant="standard"
-								
-								InputProps={{
-									endAdornment:
-										<InputAdornment position="end">
-											{
-												badge.externalURL.length === 0 ? null : (
-													<IconButton onClick={ClearBadgeExternalURLHandler}>
-														<ClearIcon/>
-													</IconButton>
-												)
-											}
-										</InputAdornment>
-								}}
-							/>
-						</FormControl>
-					</Grid>
-
-					<Grid item xs={12} md={6} > {/*Style*/}
-						<FormControl fullWidth variant="standard" >
-							<InputLabel >Style</InputLabel>
-							<Select
-								name="style"
-								value={badge.style}
-								onChange={BadgeHandler}
-							
-								label="Style"
-								variant="standard"
-							>
-								<MenuItem value="for-the-badge" >For the badge</MenuItem>
-								<MenuItem value="flat" >Flat</MenuItem>
-								<MenuItem value="flat-square" >Flat square</MenuItem>
-								<MenuItem value="plastic" >Plastic</MenuItem>
-							</Select>
-						</FormControl>
-					</Grid>
-
-					<Grid item xs={12} md={6} textAlign="center" > {/*Options*/}
-						<FormLabel component="legend" >Options</FormLabel>
-						<FormControl>
-							<FormGroup row >
-								<FormControlLabel
-									label="Logo"
-									control={<CheckBox
-													name="hasLogo"
-
-													checked={badge.hasLogo}
-													onChange={BadgeOptionsHandler}
-												/>}
-								/> 
-								<FormControlLabel
-									label="Version"
-									control={<CheckBox
-													name="hasVersion"
-
-													checked={badge.hasVersion}
-													onChange={BadgeOptionsHandler}
-												/>}
+									InputProps={{
+										endAdornment:
+											<InputAdornment position="end">
+												{
+													badge.label.length === 0 ? null : (
+														<IconButton onClick={ClearBadgeLabelHandler}>
+															<ClearIcon/>
+														</IconButton>
+													)
+												}
+											</InputAdornment>
+									}}
 								/>
+							</FormControl>
+						</Grid>
+
+						<Grid item xs={12} md={6}> {/*Version*/}
+							<FormControl fullWidth>
+								<TextField
+									name="version"
+									value={badge.version}
+									onChange={BadgeHandler}
+
+									label="Version"
+									helperText=" "
+									variant="standard"
+																	
+									InputProps={{
+										endAdornment:
+											<InputAdornment position="end">
+												{
+													badge.version.length === 0 ? null : (
+														<IconButton onClick={ClearBadgeVersionHandler}>
+															<ClearIcon/>
+														</IconButton>
+													)
+												}
+											</InputAdornment>
+									}}
+								/>
+							</FormControl>
+						</Grid>
+
+						<Grid item xs={12}> {/*External URL*/}
+							<FormControl fullWidth>
+								<TextField
+									name="externalURL"
+									value={badge.externalURL}
+									onChange={BadgeHandler}
+
+									label="External URL"
+									helperText="When badge is clicked will visit this URL"
+									variant="standard"
+									
+									InputProps={{
+										endAdornment:
+											<InputAdornment position="end">
+												{
+													badge.externalURL.length === 0 ? null : (
+														<IconButton onClick={ClearBadgeExternalURLHandler}>
+															<ClearIcon/>
+														</IconButton>
+													)
+												}
+											</InputAdornment>
+									}}
+								/>
+							</FormControl>
+						</Grid>
+
+						<Grid item xs={12} md={6} > {/*Style*/}
+							<FormControl fullWidth variant="standard" >
+								<InputLabel >Style</InputLabel>
+								<Select
+									name="style"
+									value={badge.style}
+									onChange={BadgeHandler}
 								
-							</FormGroup>
-						</FormControl>
+									label="Style"
+									variant="standard"
+								>
+									<MenuItem value="for-the-badge" >For the badge</MenuItem>
+									<MenuItem value="flat" >Flat</MenuItem>
+									<MenuItem value="flat-square" >Flat square</MenuItem>
+									<MenuItem value="plastic" >Plastic</MenuItem>
+								</Select>
+							</FormControl>
+						</Grid>
+
+						<Grid item xs={12} md={6} textAlign="center" > {/*Options*/}
+							<FormLabel component="legend" >Options</FormLabel>
+							<FormControl>
+								<FormGroup row >
+									<FormControlLabel
+										label="Logo"
+										control={<CheckBox
+														name="hasLogo"
+
+														checked={badge.hasLogo}
+														onChange={BadgeOptionsHandler}
+													/>}
+									/> 
+									<FormControlLabel
+										label="Version"
+										control={<CheckBox
+														name="hasVersion"
+
+														checked={badge.hasVersion}
+														onChange={BadgeOptionsHandler}
+													/>}
+									/>
+									
+								</FormGroup>
+							</FormControl>
+						</Grid>
 					</Grid>
-				</Grid>
-			</Container>
-		</main>
+				</Container>
+			</main>
+			<footer className="footer">
+				<Box>
+					<Typography textAlign="center" variant="subtitle1" >
+						<Link href="https://opencollective.com/shields" >
+							Consider donating to shields.io developers!
+						</Link>
+					</Typography>
+				</Box>
+			</footer>
+		</>
 	);
 };
 

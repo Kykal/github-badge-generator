@@ -1,3 +1,16 @@
+# 1.2.1
+Technologies & thanks added and minor fixes.
+## UI
+- Thanks to shields.io developers text added linked to its [donation page](https://opencollective.com/shields).
+
+## Labels added
+- You can now check which technologies were added to the list [clicking here](https://trello.com/c/NoY8HXSu/4-121).
+
+## Technology input field
+- You can now use spaces between words
+
+- - -
+
 # 1.2
 ## UI:
 - **Snackbar** - Now you will be notified when you copy the badge successfully.
