@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://src/App.css","webpack://src/index.css"],"names":[],"mappings":"AAAA,QACG,iBAAkB,CAClB,QAAS,CACT,UACH,CCJA,KACC,QAAS,CACT,wBACD","file":"main.d9899abb.chunk.css","sourcesContent":[".footer {\r\n   position: absolute;\r\n   bottom: 0;\r\n   width: 100%;\r\n}","body {\r\n\tmargin: 0;\r\n\tbackground-color: #E2EAF1;\r\n}"]}

@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/github-badge-generator/static/css/main.76f73a15.chunk.css",
-    "main.js": "/github-badge-generator/static/js/main.742301d6.chunk.js",
-    "main.js.map": "/github-badge-generator/static/js/main.742301d6.chunk.js.map",
-    "runtime-main.js": "/github-badge-generator/static/js/runtime-main.4276eff8.js",
-    "runtime-main.js.map": "/github-badge-generator/static/js/runtime-main.4276eff8.js.map",
-    "static/js/2.37bc19aa.chunk.js": "/github-badge-generator/static/js/2.37bc19aa.chunk.js",
-    "static/js/2.37bc19aa.chunk.js.map": "/github-badge-generator/static/js/2.37bc19aa.chunk.js.map",
-    "static/js/3.c31566c0.chunk.js": "/github-badge-generator/static/js/3.c31566c0.chunk.js",
-    "static/js/3.c31566c0.chunk.js.map": "/github-badge-generator/static/js/3.c31566c0.chunk.js.map",
+    "main.css": "/github-badge-generator/static/css/main.d9899abb.chunk.css",
+    "main.js": "/github-badge-generator/static/js/main.d96cca77.chunk.js",
+    "main.js.map": "/github-badge-generator/static/js/main.d96cca77.chunk.js.map",
+    "runtime-main.js": "/github-badge-generator/static/js/runtime-main.78b11550.js",
+    "runtime-main.js.map": "/github-badge-generator/static/js/runtime-main.78b11550.js.map",
+    "static/js/2.183b5042.chunk.js": "/github-badge-generator/static/js/2.183b5042.chunk.js",
+    "static/js/2.183b5042.chunk.js.map": "/github-badge-generator/static/js/2.183b5042.chunk.js.map",
+    "static/js/3.d3a22bfc.chunk.js": "/github-badge-generator/static/js/3.d3a22bfc.chunk.js",
+    "static/js/3.d3a22bfc.chunk.js.map": "/github-badge-generator/static/js/3.d3a22bfc.chunk.js.map",
     "index.html": "/github-badge-generator/index.html",
-    "static/css/main.76f73a15.chunk.css.map": "/github-badge-generator/static/css/main.76f73a15.chunk.css.map",
-    "static/js/2.37bc19aa.chunk.js.LICENSE.txt": "/github-badge-generator/static/js/2.37bc19aa.chunk.js.LICENSE.txt"
+    "static/css/main.d9899abb.chunk.css.map": "/github-badge-generator/static/css/main.d9899abb.chunk.css.map",
+    "static/js/2.183b5042.chunk.js.LICENSE.txt": "/github-badge-generator/static/js/2.183b5042.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.4276eff8.js",
-    "static/js/2.37bc19aa.chunk.js",
-    "static/css/main.76f73a15.chunk.css",
-    "static/js/main.742301d6.chunk.js"
+    "static/js/runtime-main.78b11550.js",
+    "static/js/2.183b5042.chunk.js",
+    "static/css/main.d9899abb.chunk.css",
+    "static/js/main.d96cca77.chunk.js"
   ]
 }
