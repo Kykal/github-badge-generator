@@ -235,7 +235,7 @@
 			"label": "DFE3EE",
 			"version": "3B5998"
 		},
-		"hasNoVersion": "3B5998"
+		"hasNoVersion": "DFE3EE"
 	},
 	{
 		"tags": [
@@ -473,6 +473,255 @@
 		"hasVersion": {
 			"label": "FFFFFF",
 			"version": "29BEB0"
+		},
+		"hasNoVersion": "FFFFFF"
+	},
+	{
+		"tags": [
+			"flask"
+		],
+		"label": "flask",
+		"hasVersion": {
+			"label": "000000",
+			"version": "FFFFFF"
+		},
+		"hasNoVersion": "000000"
+	},
+	{
+		"tags": [
+			"django"
+		],
+		"label": "django",
+		"hasVersion": {
+			"label": "0F3E2E",
+			"version": "FFFFFF"
+		},
+		"hasNoVersion": "0F3E2E"
+	},
+	{
+		"tags": [
+			"amazon",
+			"amzn"
+		],
+		"label": "amazon",
+		"hasVersion": {
+			"label": "232F3E",
+			"version": "E47911"
+		},
+		"hasNoVersion": "232F3E"
+	},
+	{
+		"tags": [
+			"redhat",
+			"redhatlinux"
+		],
+		"label": "redhat",
+		"hasVersion": {
+			"label": "CC0000",
+			"version": "000000"
+		},
+		"hasNoVersion": "CC0000"
+	},
+	{
+		"tags": [
+			"archlinux"
+		],
+		"label": "archlinux",
+		"hasVersion": {
+			"label": "333333",
+			"version": "1793D1"
+		},
+		"hasNoVersion": "333333"
+	},
+	{
+		"tags": [
+			"elementary",
+			"elementaryos",
+			"elementarylinux",
+			"elementaryoslinux"
+		],
+		"label": "elementary",
+		"hasVersion": {
+			"label": "FFFFFF",
+			"version": "00A3EB"
+		},
+		"hasNoVersion": "FFFFFF"
+	},
+	{
+		"tags": [
+			"element"
+		],
+		"label": "element",
+		"hasVersion": {
+			"label": "FFFFFF",
+			"version": "0DBD8C"
+		},
+		"hasNoVersion": "FFFFFF"
+	},
+	{
+		"tags": [
+			"firefox"
+		],
+		"label": "firefox",
+		"hasVersion": {
+			"label": "331E54",
+			"version": "E66000"
+		},
+		"hasNoVersion": "331E54"
+	},
+	{
+		"tags": [
+			"gchrome",
+			"chrome",
+			"googlechrome"
+		],
+		"label": "googlechrome",
+		"hasVersion": {
+			"label": "FFFFFF",
+			"version": "4285F4"
+		},
+		"hasNoVersion": "FFFFFF"
+	},
+	{
+		"tags": [
+			"wikipedia"
+		],
+		"label": "wikipedia",
+		"hasVersion": {
+			"label": "3D393A",
+			"version": "F8F8F8"
+		},
+		"hasNoVersion": "3D393A"
+	},
+	{
+		"tags": [
+			"twitter",
+			"tweet"
+		],
+		"label": "twitter",
+		"hasVersion": {
+			"label": "FFFFFF",
+			"version": "00A3FF"
+		},
+		"hasNoVersion": "FFFFFF"
+	},
+	{
+		"tags": [
+			"instagram",
+			"ig",
+			"insta"
+		],
+		"label": "instagram",
+		"hasVersion": {
+			"label": "FFFFFF",
+			"version": "E4405F"
+		},
+		"hasNoVersion": "FFFFFF"
+	},
+	{
+		"tags": [
+			"discord"
+		],
+		"label": "discord",
+		"hasVersion": {
+			"label": "FFFFFF",
+			"version": "738ADB"
+		},
+		"hasNoVersion": "FFFFFF"
+	},
+	{
+		"tags": [
+			"kotlin",
+			"kt"
+		],
+		"label": "kotlin",
+		"hasVersion": {
+			"label": "FFFFFF",
+			"version": "7F52FF"
+		},
+		"hasNoVersion": "FFFFFF"
+	},
+	{
+		"tags": [
+			"unity"
+		],
+		"label": "unity",
+		"hasVersion": {
+			"label": "000000",
+			"version": "808080"
+		},
+		"hasNoVersion": "000000"
+	},
+	{
+		"tags": [
+			"unrealengine",
+			"ue",
+			"ue4",
+			"ue5",
+			"unreal-engine"
+		],
+		"label": "unrealengine",
+		"hasVersion": {
+			"label": "000000",
+			"version": "FFFFFF"
+		},
+		"hasNoVersion": "000000"
+	},
+	{
+		"tags": [
+			"npm",
+			"nodepackagemanager"
+		],
+		"label": "npm",
+		"hasVersion": {
+			"label": "231F20",
+			"version": "CB0000"
+		},
+		"hasNoVersion": "231F20"
+	},
+	{
+		"tags": [
+			"heroku"
+		],
+		"label": "heroku",
+		"hasVersion": {
+			"label": "6762A6",
+			"version": "C9C3E6"
+		},
+		"hasNoVersion": "6762A6"
+	},
+	{
+		"tags": [
+			"php"
+		],
+		"label": "php",
+		"hasVersion": {
+			"label": "CCCCCC",
+			"version": "6C78AF"
+		},
+		"hasNoVersion": "CCCCCC"
+	},
+	{
+		"tags": [
+			"swift"
+		],
+		"label": "swift",
+		"hasVersion": {
+			"label": "FFFFFF",
+			"version": "E64A19"
+		},
+		"hasNoVersion": "FFFFFF"
+	},
+	{
+		"tags": [
+			"mui",
+			"materialui",
+			"material-ui"
+		],
+		"label": "mui",
+		"hasVersion": {
+			"label": "FFFFFF",
+			"version": "0081CB"
 		},
 		"hasNoVersion": "FFFFFF"
 	}
