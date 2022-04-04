@@ -3,7 +3,7 @@
 # Badge generator
 Generate the badges you need for your repositories, or anything else!
 
-## Examples of badges
+## Badge examples
 ### React
 |Styles|Normal|Without logo|Without version|Without logo and version
 |-|-|-|-|-|
