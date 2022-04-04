@@ -23,4 +23,4 @@ Generate the badges you need for your repositories, or anything else!
 
 
 ## Thanks
-Special thanks to [shields.io team development](https://github.com/badges) for making it easy for us to generate badges.
+Special thanks to [shields.io development team](https://github.com/badges) for making it easy for us to generate badges.
