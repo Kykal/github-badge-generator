@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/github-badge-generator/static/css/main.d9899abb.chunk.css",
-    "main.js": "/github-badge-generator/static/js/main.d96cca77.chunk.js",
-    "main.js.map": "/github-badge-generator/static/js/main.d96cca77.chunk.js.map",
+    "main.js": "/github-badge-generator/static/js/main.229e2008.chunk.js",
+    "main.js.map": "/github-badge-generator/static/js/main.229e2008.chunk.js.map",
     "runtime-main.js": "/github-badge-generator/static/js/runtime-main.78b11550.js",
     "runtime-main.js.map": "/github-badge-generator/static/js/runtime-main.78b11550.js.map",
     "static/js/2.183b5042.chunk.js": "/github-badge-generator/static/js/2.183b5042.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.78b11550.js",
     "static/js/2.183b5042.chunk.js",
     "static/css/main.d9899abb.chunk.css",
-    "static/js/main.d96cca77.chunk.js"
+    "static/js/main.229e2008.chunk.js"
   ]
 }
