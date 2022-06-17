@@ -1,3 +1,7 @@
+# 1.2.3
+## Labels addded
+- [See Trello for detailed information](https://trello.com/b/LTzuAcKK/github-badge-generator) 
+
 # 1.2.1
 Technologies & thanks added and minor fixes.
 ## UI
