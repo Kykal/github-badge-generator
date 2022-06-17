@@ -724,5 +724,257 @@
 			"version": "0081CB"
 		},
 		"hasNoVersion": "FFFFFF"
+	},
+	{
+		"tags": [
+			"rubyonrails",
+			"ruby on rails",
+			"ruby-on-rails",
+			"ruby on-rails",
+			"ruby-on rails"
+		],
+		"label": "rubyonrails",
+		"hasVersion": {
+			"label": "CC0000",
+			"version": "FFFFFF"
+		},
+		"hasNoVersion": "CC0000"
+	},
+	{
+		"tags": [
+			"microsoft",
+			"ms"
+		],
+		"label": "microsoft",
+		"hasVersion": {
+			"label": "00A1F1",
+			"version": "FFFFFF"
+		},
+		"hasNoVersion": "00A1F1"
+	},
+	{
+		"tags": [
+			"windows",
+			"win"
+		],
+		"label": "windows",
+		"hasVersion": {
+			"label": "00A1F1",
+			"version": "FFFFFF"
+		},
+		"hasNoVersion": "00A1F1"
+	},
+	{
+		"tags": [
+			"ios"
+		],
+		"label": "ios",
+		"hasVersion": {
+			"label": "8E8E93",
+			"version": "FFFFFF"
+		},
+		"hasNoVersion": "8E8E93"
+	},
+	{
+		"tags": [
+			"apple"
+		],
+		"label": "apple",
+		"hasVersion": {
+			"label": "8E8E93",
+			"version": "FFFFFF"
+		},
+		"hasNoVersion": "8E8E93"
+	},
+	{
+		"tags": [
+			"gradle"
+		],
+		"label": "gradle",
+		"hasVersion": {
+			"label": "023A3A",
+			"version": "FFFFFF"
+		},
+		"hasNoVersion": "023A3A"
+	},
+	{
+		"tags": [
+			"android"
+		],
+		"label": "android",
+		"hasVersion": {
+			"label": "000000",
+			"version": "32DE84"
+		},
+		"hasNoVersion": "000000"
+	},
+	{
+		"tags": [
+			"brave"
+		],
+		"label": "brave",
+		"hasVersion": {
+			"label": "FFFFFF",
+			"version": "E7301C"
+		},
+		"hasNoVersion": "FFFFFF"
+	},
+	{
+		"tags": [
+			"patreon"
+		],
+		"label": "patreon",
+		"hasVersion": {
+			"label": "1D282D",
+			"version": "E64413"
+		},
+		"hasNoVersion": "1D282D"
+	},
+	{
+		"tags": [
+			"onlyfans",
+			"of",
+			"only fans",
+			"only-fans"
+		],
+		"label": "onlyfans",
+		"hasVersion": {
+			"label": "FFFFFF",
+			"version": "01B0F3"
+		},
+		"hasNoVersion": "FFFFFF"
+	},
+	{
+		"tags": [
+			"bandcamp",
+			"bc"
+		],
+		"label": "bandcamp",
+		"hasVersion": {
+			"label": "FFFFFF",
+			"version": "1DA0C3"
+		},
+		"hasNoVersion": "FFFFFF"
+	},
+	{
+		"tags": [
+			"mega"
+		],
+		"label": "mega",
+		"hasVersion": {
+			"label": "DA222A",
+			"version": "FFFFFF"
+		},
+		"hasNoVersion": "DA222A"
+	},
+	{
+		"tags": [
+			"gmail"
+		],
+		"label": "gmail",
+		"hasVersion": {
+			"label": "FFFFFF",
+			"version": "EA4335"
+		},
+		"hasNoVersion": "FFFFFF"
+	},
+	{
+		"tags": [
+			"whatsapp",
+			"wa",
+			"wasa"
+		],
+		"label": "whatsapp",
+		"hasVersion": {
+			"label": "FFFFFF",
+			"version": "25D366"
+		},
+		"hasNoVersion": "FFFFFF"
+	},
+	{
+		"tags": [
+			"pinterest"
+		],
+		"label": "pinterest",
+		"hasVersion": {
+			"label": "BD081C",
+			"version": "EFEFEF"
+		},
+		"hasNoVersion": "BD081C"
+	},
+	{
+		"tags": [
+			"uber"
+		],
+		"label": "uber",
+		"hasVersion": {
+			"label": "000000",
+			"version": "FFFFFF"
+		},
+		"hasNoVersion": "000000"
+	},
+	{
+		"tags": [
+			"airbnb"
+		],
+		"label": "airbnb",
+		"hasVersion": {
+			"label": "FFFFFF",
+			"version": "FF585D"
+		},
+		"hasNoVersion": "FFFFFF"
+	},
+	{
+		"tags": [
+			"trello"
+		],
+		"label": "trello",
+		"hasVersion": {
+			"label": "008FE4",
+			"version": "FFFFFF"
+		},
+		"hasNoVersion": "008FE4"
+	},
+	{
+		"tags": [
+			"redux",
+			"react-redux",
+			"react redux"
+		],
+		"label": "redux",
+		"hasVersion": {
+			"label": "764ABC",
+			"version": "FFFFFF"
+		},
+		"hasNoVersion": "764ABC"
+	},
+	{
+		"tags": [
+			"react-router",
+			"react router",
+			"reactrouter"
+		],
+		"label": "react-router",
+		"hasVersion": {
+			"label": "121212",
+			"version": "D0021B"
+		},
+		"hasNoVersion": "121212"
+	},
+	{
+		"tags": [
+			"googlecolab",
+			"google-colab",
+			"google colab",
+			"gcolab",
+			"g-colab",
+			"colab"
+		],
+		"label": "googlecolab",
+		"hasVersion": {
+			"label": "383838",
+			"version": "E8710A"
+		},
+		"hasNoVersion": "383838"
 	}
 ]
