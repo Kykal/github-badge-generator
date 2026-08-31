@@ -1,8 +1,9 @@
 const TECHNOLOGIES = {
   // "ASP.NET Core": {
   //   technology: "ASP.NET Core",
-  //   primaryColor: "",
-  //   secondaryColor: "",
+  //   primaryColor: "FFF",
+  //   secondaryColor: "FFF",
+  // logo: ""
   // },
   Angular: {
     technology: "Angular",
@@ -16,66 +17,78 @@ const TECHNOLOGIES = {
     secondaryColor: "000000",
     logo: "deno",
   },
-  // Django: {
-  //   technology: "Django",
-  //   primaryColor: "",
-  //   secondaryColor: "",
-  // },
-  // ExpressJS: {
-  //   technology: "ExpressJS",
-  //   primaryColor: "",
-  //   secondaryColor: "",
-  // },
-  // FastAPI: {
-  //   technology: "FastAPI",
-  //   primaryColor: "",
-  //   secondaryColor: "",
-  // },
-  // Flask: {
-  //   technology: "Flask",
-  //   primaryColor: "",
-  //   secondaryColor: "",
-  // },
-  // Golang: {
-  //   technology: "Golang",
-  //   primaryColor: "",
-  //   secondaryColor: "",
-  // },
-  // JavaScript: {
-  //   technology: "JavaScript",
-  //   primaryColor: "",
-  //   secondaryColor: "",
-  // },
-  // Laravel: {
-  //   technology: "Laravel",
-  //   primaryColor: "",
-  //   secondaryColor: "",
-  // },
-  // NestJS: {
-  //   technology: "NestJS",
-  //   primaryColor: "",
-  //   secondaryColor: "",
-  // },
-  // NextJS: {
-  //   technology: "NextJS",
-  //   primaryColor: "",
-  //   secondaryColor: "",
-  // },
-  // NodeJS: {
-  //   technology: "NodeJS",
-  //   primaryColor: "",
-  //   secondaryColor: "",
-  // },
-  // NuxtJS: {
-  //   technology: "NuxtJS",
-  //   primaryColor: "",
-  //   secondaryColor: "",
-  // },
-  // Python: {
-  //   technology: "Python",
-  //   primaryColor: "",
-  //   secondaryColor: "",
-  // },
+  Django: {
+    technology: "Django",
+    primaryColor: "FFFFFF",
+    secondaryColor: "0F3E2E",
+    logo: "django",
+  },
+  ExpressJS: {
+    technology: "ExpressJS",
+    primaryColor: "FFFFFF",
+    secondaryColor: "141414",
+    logo: "express",
+  },
+  FastAPI: {
+    technology: "FastAPI",
+    primaryColor: "009485",
+    secondaryColor: "1E2129",
+    logo: "fastapi",
+  },
+  Flask: {
+    technology: "Flask",
+    primaryColor: "3BABC3",
+    secondaryColor: "fff",
+    logo: "flask",
+  },
+  Go: {
+    technology: "Go",
+    primaryColor: "29BEB0",
+    secondaryColor: "FFFFFF",
+    logo: "go",
+  },
+  JavaScript: {
+    technology: "JavaScript",
+    primaryColor: "FFF",
+    secondaryColor: "FFF",
+    logo: "",
+  },
+  Laravel: {
+    technology: "Laravel",
+    primaryColor: "FFF",
+    secondaryColor: "FFF",
+    logo: "",
+  },
+  NestJS: {
+    technology: "NestJS",
+    primaryColor: "FFF",
+    secondaryColor: "FFF",
+    logo: "",
+  },
+  NextJS: {
+    technology: "NextJS",
+    primaryColor: "FFF",
+    secondaryColor: "FFF",
+    logo: "",
+  },
+  NodeJS: {
+    technology: "NodeJS",
+    primaryColor: "FFF",
+    secondaryColor: "FFF",
+    logo: "",
+  },
+  NuxtJS: {
+    technology: "NuxtJS",
+    primaryColor: "FFF",
+    secondaryColor: "FFF",
+    logo: "",
+  },
+  Python: {
+    technology: "Python",
+    primaryColor: "FFF",
+    secondaryColor: "FFF",
+    logo: "",
+  },
   React: {
     technology: "React",
     primaryColor: "61DAFB",
