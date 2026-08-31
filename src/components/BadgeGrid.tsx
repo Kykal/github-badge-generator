@@ -21,6 +21,8 @@ const parseUrl = (
 ) => {
   const url = new URL(BADGE_BASE_URL);
 
+  url.searchParams.append("style", style);
+
   const tech: TechnologyType | undefined =
     TECHNOLOGIES[technology as keyof typeof TECHNOLOGIES];
 
@@ -30,8 +32,7 @@ const parseUrl = (
         ? "999999"
         : (tech?.primaryColor ?? "999999")
     }`;
-    url.searchParams.append("style", style);
-    url.searchParams.append("logo", technology);
+    url.searchParams.append("logo", tech?.logo ?? "");
     url.searchParams.append("label", technology);
     url.searchParams.append(
       "labelColor",
@@ -49,7 +50,6 @@ const parseUrl = (
         ? "999999"
         : (tech?.primaryColor ?? "999999")
     }`;
-    url.searchParams.append("style", style);
     url.searchParams.append("label", technology);
     url.searchParams.append(
       "labelColor",
@@ -67,7 +67,6 @@ const parseUrl = (
         ? "999999"
         : (tech?.secondaryColor ?? "999999")
     }`;
-    url.searchParams.append("style", style);
     url.searchParams.append("logo", technology);
 
     return url;
@@ -78,7 +77,6 @@ const parseUrl = (
       ? "999999"
       : (tech?.secondaryColor ?? "999999")
   }`;
-  url.searchParams.append("style", style);
 
   return url;
 };
