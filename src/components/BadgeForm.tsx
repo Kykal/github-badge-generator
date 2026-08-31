@@ -50,7 +50,9 @@ const BadgeForm = () => {
             <Autocomplete
               label="Technology"
               placeholder="React"
-              data={Object.keys(TECHNOLOGIES)}
+              data={Object.values(TECHNOLOGIES)
+                .map((item) => item.technology)
+                .sort((a, b) => a.localeCompare(b))}
               key={form.key("technology")}
               clearable
               {...form.getInputProps("technology")}
