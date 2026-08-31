@@ -3,11 +3,11 @@ const TECHNOLOGY_FALLBACK = "Technology";
 const VERSION_FALLBACK = "Version";
 const BADGE_BASE_URL = "https://img.shields.io";
 
+import { Button, Center, CopyButton, Grid, Image } from "@mantine/core";
+import { notifications } from "@mantine/notifications";
+import { IconCheck, IconCopy } from "@tabler/icons-react";
 import { useMemo } from "react";
 import { useFormContext } from "../contexts/badge";
-
-import { Button, Center, CopyButton, Grid, Image } from "@mantine/core";
-import { IconCheck, IconCopy } from "@tabler/icons-react";
 
 const emptyStringFallback = (value: string, fallback: string) =>
   value === "" ? fallback : value;
@@ -114,7 +114,15 @@ const BadgeGrid = () => {
             {({ copied, copy }) => (
               <Button
                 variant="outline"
-                onClick={copy}
+                onClick={() => {
+                  copy();
+
+                  notifications.show({
+                    message: "Badge URL copied!",
+                    color: "green",
+                    icon: <IconCheck />,
+                  });
+                }}
                 leftSection={copied ? <IconCheck /> : <IconCopy />}
               >
                 Copy badge URL
@@ -131,7 +139,15 @@ const BadgeGrid = () => {
             {({ copied, copy }) => (
               <Button
                 variant="outline"
-                onClick={copy}
+                onClick={() => {
+                  copy();
+
+                  notifications.show({
+                    message: "Markdown URL copied!",
+                    color: "green",
+                    icon: <IconCheck />,
+                  });
+                }}
                 leftSection={copied ? <IconCheck /> : <IconCopy />}
               >
                 Copy markdown URL
