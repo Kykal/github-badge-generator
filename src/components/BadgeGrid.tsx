@@ -21,11 +21,14 @@ const parseUrl = (
 ) => {
   const url = new URL(BADGE_BASE_URL);
 
+  const tech: TechnologyType | undefined =
+    TECHNOLOGIES[technology as keyof typeof TECHNOLOGIES];
+
   if (showLogo && showVersion) {
     url.pathname = `/badge/${version}-${
       technology === TECHNOLOGY_FALLBACK
         ? "999999"
-        : TECHNOLOGIES[technology as keyof typeof TECHNOLOGIES].primaryColor
+        : (tech?.primaryColor ?? "999999")
     }`;
     url.searchParams.append("style", style);
     url.searchParams.append("logo", technology);
@@ -34,7 +37,7 @@ const parseUrl = (
       "labelColor",
       technology === TECHNOLOGY_FALLBACK
         ? "333333"
-        : TECHNOLOGIES[technology as keyof typeof TECHNOLOGIES].secondaryColor,
+        : (tech?.secondaryColor ?? "333333"),
     );
 
     return url;
@@ -44,7 +47,7 @@ const parseUrl = (
     url.pathname = `/badge/${version}-${
       technology === TECHNOLOGY_FALLBACK
         ? "999999"
-        : TECHNOLOGIES[technology as keyof typeof TECHNOLOGIES].primaryColor
+        : (tech?.primaryColor ?? "999999")
     }`;
     url.searchParams.append("style", style);
     url.searchParams.append("label", technology);
@@ -52,7 +55,7 @@ const parseUrl = (
       "labelColor",
       technology === TECHNOLOGY_FALLBACK
         ? "333333"
-        : TECHNOLOGIES[technology as keyof typeof TECHNOLOGIES].secondaryColor,
+        : (tech?.secondaryColor ?? "333333"),
     );
 
     return url;
@@ -62,7 +65,7 @@ const parseUrl = (
     url.pathname = `/badge/${technology}-${
       technology === TECHNOLOGY_FALLBACK
         ? "999999"
-        : TECHNOLOGIES[technology as keyof typeof TECHNOLOGIES].secondaryColor
+        : (tech?.secondaryColor ?? "999999")
     }`;
     url.searchParams.append("style", style);
     url.searchParams.append("logo", technology);
@@ -73,12 +76,14 @@ const parseUrl = (
   url.pathname = `/badge/${technology}-${
     technology === TECHNOLOGY_FALLBACK
       ? "999999"
-      : TECHNOLOGIES[technology as keyof typeof TECHNOLOGIES].secondaryColor
+      : (tech?.secondaryColor ?? "999999")
   }`;
   url.searchParams.append("style", style);
 
   return url;
 };
+
+import type { TechnologyType } from "../constants/technologies";
 
 const BadgeGrid = () => {
   const form = useFormContext();

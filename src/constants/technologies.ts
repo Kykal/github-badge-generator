@@ -116,4 +116,7 @@ const TECHNOLOGIES = {
   // },
 } as const;
 
+export type TechnologiesType = typeof TECHNOLOGIES;
+export type TechnologyType = TechnologiesType[keyof TechnologiesType];
+
 export default TECHNOLOGIES;
