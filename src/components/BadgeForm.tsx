@@ -1,3 +1,7 @@
+import TECHNOLOGIES from "../constants/technologies";
+
+import { useForm } from "../contexts/badge";
+
 import {
   Autocomplete,
   Box,
@@ -8,8 +12,7 @@ import {
   TextInput,
 } from "@mantine/core";
 
-import TECHNOLOGIES from "../constants/technologies";
-import { FormProvider, useForm } from "../contexts/badge";
+import { FormProvider } from "../contexts/badge";
 import BadgeGrid from "./BadgeGrid";
 
 const BadgeForm = () => {
