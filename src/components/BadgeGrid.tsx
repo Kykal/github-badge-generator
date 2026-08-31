@@ -101,7 +101,7 @@ const BadgeGrid = () => {
 
   const { href } = useMemo(
     () => parseUrl(showLogo, showVersion, style, technology, version),
-    [showLogo, showVersion, style, technology, version, parseUrl],
+    [showLogo, showVersion, style, technology, version],
   );
 
   return (
