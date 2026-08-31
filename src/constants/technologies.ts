@@ -90,7 +90,7 @@ const TECHNOLOGIES = {
     logo: "react",
   },
   Ruby: {
-    technology: "Ruby on Rails",
+    technology: "Ruby",
     primaryColor: "FFFFFF",
     secondaryColor: "CC0000",
     logo: "ruby",
