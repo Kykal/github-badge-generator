@@ -1,6 +1,7 @@
 import {
   Autocomplete,
   Box,
+  Center,
   Checkbox,
   Grid,
   Select,
@@ -9,7 +10,7 @@ import {
 
 import TECHNOLOGIES from "../constants/technologies";
 import { FormProvider, useForm } from "../contexts/badge";
-import Badge from "./Badge";
+import BadgeGrid from "./BadgeGrid";
 
 const BadgeForm = () => {
   const form = useForm({
@@ -36,9 +37,7 @@ const BadgeForm = () => {
         })}
       >
         <Grid>
-          <Grid.Col span={12}>
-            <Badge />
-          </Grid.Col>
+          <BadgeGrid />
           <Grid.Col
             span={{
               base: 12,
@@ -70,7 +69,7 @@ const BadgeForm = () => {
           <Grid.Col span={12}>
             <TextInput
               label="External URL"
-              placeholder="https://github.com/"
+              placeholder="https://github.com"
               description="The URL that the badge will link to when clicked."
               type="url"
               key={form.key("externalUrl")}
@@ -110,33 +109,35 @@ const BadgeForm = () => {
           </Grid.Col>
           <Grid.Col
             span={{
-              xs: 12,
-              sm: 6,
+              xs: 6,
               md: 3,
             }}
           >
-            <Checkbox
-              label="Show logo"
-              key={form.key("showLogo")}
-              {...form.getInputProps("showLogo", {
-                type: "checkbox",
-              })}
-            />
+            <Center h="100%">
+              <Checkbox
+                label="Show logo"
+                key={form.key("showLogo")}
+                {...form.getInputProps("showLogo", {
+                  type: "checkbox",
+                })}
+              />
+            </Center>
           </Grid.Col>
           <Grid.Col
             span={{
-              xs: 12,
-              sm: 6,
+              xs: 6,
               md: 3,
             }}
           >
-            <Checkbox
-              label="Show version"
-              key={form.key("showVersion")}
-              {...form.getInputProps("showVersion", {
-                type: "checkbox",
-              })}
-            />
+            <Center h="100%">
+              <Checkbox
+                label="Show version"
+                key={form.key("showVersion")}
+                {...form.getInputProps("showVersion", {
+                  type: "checkbox",
+                })}
+              />
+            </Center>
           </Grid.Col>
         </Grid>
       </Box>
