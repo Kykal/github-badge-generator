@@ -16,7 +16,14 @@ const App = () => {
             bottom: 0,
           }}
         >
-          <Button variant="transparent" leftSection={<IconExternalLink />}>
+          <Button
+            component="a"
+            href="https://opencollective.com/shields"
+            leftSection={<IconExternalLink />}
+            rel="noopener noreferrer"
+            target="_blank"
+            variant="transparent"
+          >
             Consider donating to shields.io developers!
           </Button>
         </Group>
