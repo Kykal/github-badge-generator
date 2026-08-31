@@ -15,7 +15,7 @@ const App = () => {
           rel="noopener noreferrer"
           target="_blank"
           variant="transparent"
-          py={8}
+          mb={8}
           style={{
             position: "absolute",
             bottom: 0,
