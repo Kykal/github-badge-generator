@@ -106,7 +106,7 @@ const BadgeGrid = () => {
 
   return (
     <>
-      <Grid.Col span={12}>
+      <Grid.Col span={12} h={28}>
         <Center>
           <Image alt="badge" fit="none" src={href} w="fit-content" />
         </Center>
