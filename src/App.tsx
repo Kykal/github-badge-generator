@@ -4,7 +4,7 @@ import BadgeForm from "./components/BadgeForm";
 
 const App = () => {
   return (
-    <Container size="xs">
+    <Container component="main" size="xs">
       <Center h="100dvh">
         <BadgeForm />
       </Center>
