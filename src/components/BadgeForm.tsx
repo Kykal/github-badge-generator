@@ -144,24 +144,6 @@ const BadgeForm = () => {
           </Grid.Col>
         </Grid>
       </Box>
-      <Box
-        component="pre"
-        style={{
-          backgroundColor: "#ffec9e",
-          borderColor: "#c99157",
-          borderRadius: 8,
-          borderStyle: "solid",
-          borderWidth: 1,
-          left: 0,
-          marginLeft: 8,
-          marginTop: 8,
-          padding: 8,
-          position: "absolute",
-          top: 0,
-        }}
-      >
-        {JSON.stringify(form.getValues(), null, 2)}
-      </Box>
     </FormProvider>
   );
 };
