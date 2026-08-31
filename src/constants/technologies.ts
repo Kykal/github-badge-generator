@@ -4,16 +4,18 @@ const TECHNOLOGIES = {
   //   primaryColor: "",
   //   secondaryColor: "",
   // },
-  // Angular: {
-  //   technology: "Angular",
-  //   primaryColor: "",
-  //   secondaryColor: "",
-  // },
-  // Deno: {
-  //   technology: "Deno",
-  //   primaryColor: "",
-  //   secondaryColor: "",
-  // },
+  Angular: {
+    technology: "Angular",
+    primaryColor: "FFFFFF",
+    secondaryColor: "B52E31",
+    logo: "angular",
+  },
+  Deno: {
+    technology: "Deno",
+    primaryColor: "70FFAF",
+    secondaryColor: "000000",
+    logo: "deno",
+  },
   // Django: {
   //   technology: "Django",
   //   primaryColor: "",
@@ -78,42 +80,56 @@ const TECHNOLOGIES = {
     technology: "React",
     primaryColor: "61DAFB",
     secondaryColor: "20232A",
+    logo: "react",
   },
-  // "Ruby on Rails": {
-  //   technology: "Ruby on Rails",
-  //   primaryColor: "",
-  //   secondaryColor: "",
-  // },
-  // Rust: {
-  //   technology: "Rust",
-  //   primaryColor: "",
-  //   secondaryColor: "",
-  // },
-  // SolidJS: {
-  //   technology: "SolidJS",
-  //   primaryColor: "",
-  //   secondaryColor: "",
-  // },
-  // "Spring Boot": {
-  //   technology: "Spring Boot",
-  //   primaryColor: "",
-  //   secondaryColor: "",
-  // },
-  // Svelte: {
-  //   technology: "Svelte",
-  //   primaryColor: "",
-  //   secondaryColor: "",
-  // },
-  // TypeScript: {
-  //   technology: "TypeScript",
-  //   primaryColor: "",
-  //   secondaryColor: "",
-  // },
-  // VueJS: {
-  //   technology: "VueJS",
-  //   primaryColor: "",
-  //   secondaryColor: "",
-  // },
+  Ruby: {
+    technology: "Ruby on Rails",
+    primaryColor: "FFFFFF",
+    secondaryColor: "CC0000",
+    logo: "ruby",
+  },
+  "Ruby on Rails": {
+    technology: "Ruby on Rails",
+    primaryColor: "FFFFFF",
+    secondaryColor: "CC0000",
+    logo: "rubyonrails",
+  },
+  Rust: {
+    technology: "Rust",
+    primaryColor: "F74C00",
+    secondaryColor: "000000",
+    logo: "rust",
+  },
+  SolidJS: {
+    technology: "SolidJS",
+    primaryColor: "90C3E8",
+    secondaryColor: "538CC8",
+    logo: "solid",
+  },
+  "Spring Boot": {
+    technology: "Spring Boot",
+    primaryColor: "6CB52D",
+    secondaryColor: "FFFFFF",
+    logo: "springboot",
+  },
+  Svelte: {
+    technology: "Svelte",
+    primaryColor: "FF3E00",
+    secondaryColor: "FFFFFF",
+    logo: "svelte",
+  },
+  TypeScript: {
+    technology: "TypeScript",
+    primaryColor: "3178C6",
+    secondaryColor: "FFFFFF",
+    logo: "typescript",
+  },
+  VueJS: {
+    technology: "VueJS",
+    primaryColor: "41B883",
+    secondaryColor: "35495E",
+    logo: "vue.js",
+  },
 } as const;
 
 export type TechnologiesType = typeof TECHNOLOGIES;
