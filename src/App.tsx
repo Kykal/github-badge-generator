@@ -1,4 +1,4 @@
-import { Button, Center, Container, Group } from "@mantine/core";
+import { Button, Center, Container } from "@mantine/core";
 import { IconExternalLink } from "@tabler/icons-react";
 
 import BadgeForm from "./components/BadgeForm";
@@ -8,25 +8,21 @@ const App = () => {
     <Container component="main" size="xs">
       <Center h="100dvh">
         <BadgeForm />
-        <Group
-          gap={4}
+        <Button
+          component="a"
+          href="https://opencollective.com/shields"
+          leftSection={<IconExternalLink />}
+          rel="noopener noreferrer"
+          target="_blank"
+          variant="transparent"
           py={8}
           style={{
             position: "absolute",
             bottom: 0,
           }}
         >
-          <Button
-            component="a"
-            href="https://opencollective.com/shields"
-            leftSection={<IconExternalLink />}
-            rel="noopener noreferrer"
-            target="_blank"
-            variant="transparent"
-          >
-            Consider donating to shields.io developers!
-          </Button>
-        </Group>
+          Consider donating to shields.io developers!
+        </Button>
       </Center>
     </Container>
   );
